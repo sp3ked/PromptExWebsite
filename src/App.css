@@ -1,0 +1,145 @@
+:root {
+  --neon-blue: #00f0ff;
+  --dark-grey: #333;
+  --black: #000;
+  --light-grey: #999;
+  --text: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: var(--black);
+  color: var(--text);
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Home page styles */
+.home-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.home-container h1 {
+  color: var(--neon-blue);
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  color: var(--light-grey);
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.links a:hover {
+  color: var(--neon-blue);
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+/* Privacy Policy styles */
+.privacy-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  width: 80%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border: 1px solid var(--neon-blue);
+  box-shadow: 0 0 10px var(--neon-blue);
+}
+
+.privacy-container h1 {
+  color: var(--neon-blue);
+  border-bottom: 1px solid var(--neon-blue);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+.privacy-container section {
+  margin-bottom: 2rem;
+}
+
+.privacy-container h2 {
+  color: var(--neon-blue);
+  margin-bottom: 1rem;
+}
+
+.privacy-container ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-container a {
+  color: var(--neon-blue);
+  text-decoration: none;
+}
+
+.privacy-container a:hover {
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+.back-button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.back-button a {
+  color: var(--light-grey);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.back-button a:hover {
+  color: var(--neon-blue);
+}
