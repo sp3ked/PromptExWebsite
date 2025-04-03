@@ -8,7 +8,7 @@ const Home = () => {
       <h1>PROMPTR</h1>
       <p className="description">A minimalist tool for storing and managing your AI prompts</p>
       <div className="links">
-        <Link to="/privacy">Policy</Link>
+        <Link to="/privacy">Privacy Policy</Link>
         <a href="#">Coming Soon</a>
       </div>
     </div>
