@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <h1>PROMPTR</h1>
+      <p className="description">A minimalist tool for storing and managing your AI prompts</p>
       <div className="links">
         <Link to="/privacy">Policy</Link>
         <a href="#">Coming Soon</a>
